@@ -10,7 +10,7 @@ export default function PublicNav() {
     <nav className="w-full bg-white px-8 py-4 flex items-center justify-between shadow-lg sticky top-0 z-50">
       {/* Logo */}
       <div className="flex items-center">
-        <Link href="/" className="text-[#6E62E5] font-extrabold text-4xl">
+        <Link href="/" className="text-[#6E62E5] font-black text-4xl">
           Co-Doctor
         </Link>
       </div>
