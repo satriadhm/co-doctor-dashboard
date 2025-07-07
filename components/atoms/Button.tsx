@@ -20,7 +20,7 @@ export default function Button({
   const variantClasses = {
     primary: "bg-[#6E62E5] text-white hover:opacity-90",
     secondary: "bg-gray-200 text-gray-800 hover:bg-gray-300",
-    outline: "border-2 border-[#6E62E5] text-[#6E62E5] hover:bg-[#6E62E5] hover:text-white"
+    outline: "border border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50 bg-white"
   };
 
   const sizeClasses = {
