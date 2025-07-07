@@ -5,7 +5,7 @@ import ImageAtom from "../atoms/ImageAtom";
 export default function HeroSection() {
   return (
     <section className="flex flex-col items-center py-6">
-      <Heading level={1} className="mb-4">
+      <Heading level={1} className="mb-4 text-center">
         👋 Hello, Medical Professionals
       </Heading>
       <Text variant="large" className="text-center">
