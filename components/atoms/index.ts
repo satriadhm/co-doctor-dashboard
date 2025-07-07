@@ -5,3 +5,7 @@ export { default as Heading } from "./Heading";
 export { default as Text } from "./Text";
 export { default as ImageAtom } from "./ImageAtom";
 export { default as Input } from "./Input";
+export { default as StatCard } from "./StatCard";
+export { default as SidebarItem } from "./SidebarItem";
+export { default as SearchBar } from "./SearchBar";
+export { default as UserProfile } from "./UserProfile";
