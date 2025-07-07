@@ -1,3 +1,5 @@
+"use client";
+
 import SearchBar from "../atoms/SearchBar";
 import UserProfile from "../atoms/UserProfile";
 

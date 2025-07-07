@@ -1,3 +1,5 @@
+"use client";
+
 interface SearchBarProps {
   placeholder?: string;
   value?: string;

@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "../atoms/Button";
 
 interface SocialButtonProps {

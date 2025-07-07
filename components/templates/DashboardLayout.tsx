@@ -1,3 +1,5 @@
+"use client";
+
 import Sidebar from "../organisms/Sidebar";
 import DashboardHeader from "../organisms/DashboardHeader";
 import DashboardContent from "../organisms/DashboardContent";
