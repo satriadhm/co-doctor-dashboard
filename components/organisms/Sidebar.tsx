@@ -1,3 +1,5 @@
+"use client";
+
 import SidebarItem from "../atoms/SidebarItem";
 
 export default function Sidebar() {

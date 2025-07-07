@@ -1,3 +1,5 @@
+"use client";
+
 import OverviewStats from "../molecules/OverviewStats";
 import HistoryTable from "../molecules/HistoryTable";
 import ChartCard from "../molecules/ChartCard";
