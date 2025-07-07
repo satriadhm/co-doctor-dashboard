@@ -1,5 +1,5 @@
-import AboutView from "@/components/about/AboutView";
+import AboutContent from "@/components/organisms/AboutContent";
 
 export default function AboutPage() {
-  return <AboutView />;
+  return <AboutContent />;
 }

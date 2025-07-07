@@ -1,14 +1,9 @@
-import PublicNav from "@/components/layout/PublicNav";
+import PublicLayout from "@/components/templates/PublicLayout";
 
-export default function PublicLayout({
+export default function PublicLayoutWrapper({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <>
-      <PublicNav />
-      {children}
-    </>
-  );
+  return <PublicLayout>{children}</PublicLayout>;
 }
