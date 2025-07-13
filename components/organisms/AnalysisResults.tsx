@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import ErrorCorrectionItem from "../molecules/ErrorCorrectionItem";
 import { errorDetails, samplePatientText } from "../../constants/uploadData";

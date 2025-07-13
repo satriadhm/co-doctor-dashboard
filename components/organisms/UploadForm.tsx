@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import PatientIdInput from "../atoms/PatientIdInput";
 import FileUploadArea from "../atoms/FileUploadArea";
