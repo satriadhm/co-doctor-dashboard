@@ -27,10 +27,10 @@ export default function SettingsContent({
   onInstitutionChange,
   onSpecializationChange,
   onPasswordChange,
-  onSave,
+  onSave
 }: SettingsContentProps) {
   return (
-    <div className="flex-1 p-10 bg-gray-50">
+    <div className="flex-1 p-6 bg-gray-50">
       <h1 className="text-2xl font-semibold text-gray-800 mb-8">
         Setting Account
       </h1>
@@ -47,7 +47,10 @@ export default function SettingsContent({
           onSpecializationChange={onSpecializationChange}
         />
 
-        <SecurityForm password={password} onPasswordChange={onPasswordChange} />
+        <SecurityForm
+          password={password}
+          onPasswordChange={onPasswordChange}
+        />
 
         <div className="flex justify-end">
           <SaveButton onClick={onSave} />
