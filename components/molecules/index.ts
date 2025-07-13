@@ -11,3 +11,6 @@ export { default as ChatInput } from "./ChatInput";
 export { default as ChatMessages } from "./ChatMessages";
 export { default as ProfileForm } from "./ProfileForm";
 export { default as SecurityForm } from "./SecurityForm";
+export { default as HistoryFilters } from "./HistoryFilters";
+export { default as HistoryTableRow } from "./HistoryTableRow";
+export { default as HistoryTableHeader } from "./HistoryTableHeader";
