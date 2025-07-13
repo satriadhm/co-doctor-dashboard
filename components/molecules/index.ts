@@ -6,3 +6,6 @@ export { default as SocialButton } from "./SocialButton";
 export { default as OverviewStats } from "./OverviewStats";
 export { default as HistoryTable } from "./HistoryTable";
 export { default as ChartCard } from "./ChartCard";
+export { default as FAQSection } from "./FAQSection";
+export { default as ChatInput } from "./ChatInput";
+export { default as ChatMessages } from "./ChatMessages";

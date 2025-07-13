@@ -9,3 +9,6 @@ export { default as StatCard } from "./StatCard";
 export { default as SidebarItem } from "./SidebarItem";
 export { default as SearchBar } from "./SearchBar";
 export { default as UserProfile } from "./UserProfile";
+export { default as FAQItem } from "./FAQItem";
+export { default as ChatMessage } from "./ChatMessage";
+export { default as ChatToggleButton } from "./ChatToggleButton";
