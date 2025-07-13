@@ -1,14 +1,17 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import SidebarItem from "../atoms/SidebarItem";
 
 export default function Sidebar() {
+  const pathname = usePathname();
+
   const menuItems = [
-    { icon: "📊", label: "Dashboard", active: true },
-    { icon: "📤", label: "Upload", active: false },
-    { icon: "📋", label: "History", active: false },
-    { icon: "⚙️", label: "Setting", active: false },
-    { icon: "❓", label: "Help", active: false }
+    { icon: "📊", label: "Dashboard", href: "/dashboard" },
+    { icon: "📤", label: "Upload", href: "/upload" },
+    { icon: "📋", label: "History", href: "/history" },
+    { icon: "⚙️", label: "Settings", href: "/settings" },
+    { icon: "❓", label: "Help", href: "/help" },
   ];
 
   return (
@@ -19,14 +22,15 @@ export default function Sidebar() {
             <span className="text-white text-sm">☰</span>
           </div>
         </div>
-        
+
         <nav className="space-y-2">
           {menuItems.map((item, index) => (
             <SidebarItem
               key={index}
               icon={item.icon}
               label={item.label}
-              active={item.active}
+              active={pathname === item.href}
+              href={item.href}
             />
           ))}
         </nav>
