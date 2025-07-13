@@ -4,3 +4,4 @@ export { default as Sidebar } from "./Sidebar";
 export { default as DashboardHeader } from "./DashboardHeader";
 export { default as DashboardContent } from "./DashboardContent";
 export { default as LiveChatWidget } from "./LiveChatWidget";
+export { default as SettingsContent } from "./SettingsContent";

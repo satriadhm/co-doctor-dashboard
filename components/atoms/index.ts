@@ -12,3 +12,6 @@ export { default as UserProfile } from "./UserProfile";
 export { default as FAQItem } from "./FAQItem";
 export { default as ChatMessage } from "./ChatMessage";
 export { default as ChatToggleButton } from "./ChatToggleButton";
+export { default as FormField } from "./FormField";
+export { default as SectionHeader } from "./SectionHeader";
+export { default as SaveButton } from "./SaveButton";

@@ -9,3 +9,5 @@ export { default as ChartCard } from "./ChartCard";
 export { default as FAQSection } from "./FAQSection";
 export { default as ChatInput } from "./ChatInput";
 export { default as ChatMessages } from "./ChatMessages";
+export { default as ProfileForm } from "./ProfileForm";
+export { default as SecurityForm } from "./SecurityForm";
