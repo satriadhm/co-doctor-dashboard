@@ -1,10 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import SidebarItem from "../atoms/SidebarItem";
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const [isMinimized, setIsMinimized] = useState(false);
 
   const menuItems = [
     { icon: "📊", label: "Dashboard", href: "/dashboard" },
@@ -15,12 +17,27 @@ export default function Sidebar() {
   ];
 
   return (
-    <div className="w-64 bg-white border-r border-gray-200 min-h-screen">
-      <div className="p-6">
-        <div className="flex items-center space-x-2 mb-8">
-          <div className="w-8 h-8 bg-[#6E62E5] rounded flex items-center justify-center">
-            <span className="text-white text-sm">☰</span>
-          </div>
+    <div
+      className={`bg-white border-r border-gray-200 min-h-screen transition-all duration-300 ${
+        isMinimized ? "w-16" : "w-64"
+      }`}
+    >
+      <div className="p-3 mt-2">
+        <div className="flex items-center mb-8">
+          <button
+            onClick={() => setIsMinimized(!isMinimized)}
+            className="w-8 h-8 border border-gray-300 rounded flex items-center justify-center hover:bg-gray-100 transition-colors"
+            aria-label={isMinimized ? "Expand sidebar" : "Minimize sidebar"}
+          >
+            <span className="text-gray-700 text-lg font-bold p-3">☰</span>
+          </button>
+          <span
+            className={`font-semibold text-gray-800 transition-all duration-300 overflow-hidden whitespace-nowrap ml-2 ${
+              isMinimized ? "w-auto opacity-0" : "w-auto opacity-100"
+            }`}
+          >
+            Co-Doctor
+          </span>
         </div>
 
         <nav className="space-y-2">
@@ -31,6 +48,7 @@ export default function Sidebar() {
               label={item.label}
               active={pathname === item.href}
               href={item.href}
+              isMinimized={isMinimized}
             />
           ))}
         </nav>
