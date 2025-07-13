@@ -1,12 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import SidebarItem from "../atoms/SidebarItem";
 
 export default function Sidebar() {
   const pathname = usePathname();
   const [isMinimized, setIsMinimized] = useState(false);
+
+  // Update CSS custom property when sidebar state changes
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      "--sidebar-width",
+      isMinimized ? "64px" : "256px"
+    );
+  }, [isMinimized]);
 
   const menuItems = [
     { icon: "📊", label: "Dashboard", href: "/dashboard" },
@@ -18,7 +26,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`bg-white border-r border-gray-200 min-h-screen transition-all duration-300 ${
+      className={`bg-white border-r border-gray-200 h-screen fixed left-0 top-0 z-50 transition-all duration-300 ${
         isMinimized ? "w-16" : "w-64"
       }`}
     >
