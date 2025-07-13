@@ -9,11 +9,28 @@ export default function DashboardContent() {
     <div className="flex-1 p-6 bg-gray-50">
       <div className="mb-6 flex items-center justify-between">
         <h1 className="text-2xl font-bold text-gray-900">Dashboard</h1>
-        <select className="px-4 py-2 border border-gray-300 rounded-lg text-sm">
-          <option>This Month</option>
-          <option>Last Month</option>
-          <option>This Year</option>
-        </select>
+        <div className="relative">
+          <select className="appearance-none bg-white border-2 border-[#6E62E5] text-[#6E62E5] font-medium px-6 py-2 pr-10 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-[#6E62E5] focus:ring-opacity-50 cursor-pointer">
+            <option>This Month</option>
+            <option>Last Month</option>
+            <option>This Year</option>
+          </select>
+          <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <svg
+              className="w-4 h-4 text-[#6E62E5]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
 
       <OverviewStats />
