@@ -6,10 +6,10 @@ interface SearchBarProps {
   onChange?: (value: string) => void;
 }
 
-export default function SearchBar({ 
-  placeholder = "Search for Something", 
-  value, 
-  onChange 
+export default function SearchBar({
+  placeholder = "Search for Something",
+  value,
+  onChange,
 }: SearchBarProps) {
   return (
     <div className="relative">
@@ -21,7 +21,7 @@ export default function SearchBar({
         className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#6E62E5] focus:border-transparent outline-none"
         placeholder={placeholder}
         value={value}
-        onChange={(e) => onChange?.(e.target.value)}
+        onChange={e => onChange?.(e.target.value)}
       />
     </div>
   );

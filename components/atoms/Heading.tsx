@@ -6,7 +6,11 @@ interface HeadingProps {
   className?: string;
 }
 
-export default function Heading({ level, children, className = "" }: HeadingProps) {
+export default function Heading({
+  level,
+  children,
+  className = "",
+}: HeadingProps) {
   const baseClasses = "font-black text-[#6E62E5]";
   const levelClasses = {
     1: "text-4xl",
@@ -14,7 +18,7 @@ export default function Heading({ level, children, className = "" }: HeadingProp
     3: "text-2xl",
     4: "text-xl",
     5: "text-lg",
-    6: "text-base"
+    6: "text-base",
   };
 
   return createElement(

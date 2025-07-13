@@ -8,7 +8,7 @@ export default function NavigationLinks() {
 
   const links = [
     { href: "/about", label: "About" },
-    { href: "/signup", label: "Sign Up" }
+    { href: "/signup", label: "Sign Up" },
   ];
 
   return (

@@ -9,7 +9,7 @@ export default function SettingPage() {
     email: "Lorem Ipsum",
     institution: "Lorem Ipsum",
     specialization: "Lorem Ipsum",
-    password: "Lorem Ipsum"
+    password: "Lorem Ipsum",
   });
 
   const handleSave = () => {
@@ -25,11 +25,19 @@ export default function SettingPage() {
       institution={formData.institution}
       specialization={formData.specialization}
       password={formData.password}
-      onFullNameChange={(value) => setFormData(prev => ({ ...prev, fullName: value }))}
-      onEmailChange={(value) => setFormData(prev => ({ ...prev, email: value }))}
-      onInstitutionChange={(value) => setFormData(prev => ({ ...prev, institution: value }))}
-      onSpecializationChange={(value) => setFormData(prev => ({ ...prev, specialization: value }))}
-      onPasswordChange={(value) => setFormData(prev => ({ ...prev, password: value }))}
+      onFullNameChange={value =>
+        setFormData(prev => ({ ...prev, fullName: value }))
+      }
+      onEmailChange={value => setFormData(prev => ({ ...prev, email: value }))}
+      onInstitutionChange={value =>
+        setFormData(prev => ({ ...prev, institution: value }))
+      }
+      onSpecializationChange={value =>
+        setFormData(prev => ({ ...prev, specialization: value }))
+      }
+      onPasswordChange={value =>
+        setFormData(prev => ({ ...prev, password: value }))
+      }
       onSave={handleSave}
     />
   );

@@ -20,7 +20,7 @@ export default function ChatInput({ value, onChange, onSend }: ChatInputProps) {
         <input
           type="text"
           value={value}
-          onChange={(e) => onChange(e.target.value)}
+          onChange={e => onChange(e.target.value)}
           onKeyPress={handleKeyPress}
           placeholder="Type your message"
           className="flex-1 px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#6E62E5] focus:border-transparent"

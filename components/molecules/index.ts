@@ -14,3 +14,6 @@ export { default as SecurityForm } from "./SecurityForm";
 export { default as HistoryFilters } from "./HistoryFilters";
 export { default as HistoryTableRow } from "./HistoryTableRow";
 export { default as HistoryTableHeader } from "./HistoryTableHeader";
+export { default as AnalysisSettings } from "./AnalysisSettings";
+export { default as TextInput } from "./TextInput";
+export { default as ErrorCorrectionItem } from "./ErrorCorrectionItem";

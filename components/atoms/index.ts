@@ -20,3 +20,8 @@ export { default as StatusBadge } from "./StatusBadge";
 export { default as ActionButton } from "./ActionButton";
 export { default as TableHeader } from "./TableHeader";
 export { default as TableCell } from "./TableCell";
+export { default as PatientIdInput } from "./PatientIdInput";
+export { default as FileUploadArea } from "./FileUploadArea";
+export { default as Checkbox } from "./Checkbox";
+export { default as RadioButton } from "./RadioButton";
+export { default as ConfidenceSlider } from "./ConfidenceSlider";

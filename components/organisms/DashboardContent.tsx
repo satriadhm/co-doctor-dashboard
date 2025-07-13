@@ -20,10 +20,12 @@ export default function DashboardContent() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
         <HistoryTable />
-        
+
         <ChartCard title="Type of Error Detected">
           <div className="w-full h-full bg-gradient-to-r from-blue-400 to-purple-600 rounded-lg flex items-center justify-center">
-            <span className="text-white font-medium">Bar Chart Placeholder</span>
+            <span className="text-white font-medium">
+              Bar Chart Placeholder
+            </span>
           </div>
         </ChartCard>
       </div>
@@ -31,7 +33,9 @@ export default function DashboardContent() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <ChartCard title="Volume of Records Processed">
           <div className="w-full h-full bg-gradient-to-r from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
-            <span className="text-white font-medium">Line Chart Placeholder</span>
+            <span className="text-white font-medium">
+              Line Chart Placeholder
+            </span>
           </div>
         </ChartCard>
 

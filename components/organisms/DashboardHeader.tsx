@@ -10,15 +10,10 @@ export default function DashboardHeader() {
         <div className="flex-1 max-w-lg">
           <SearchBar placeholder="Search for Something" />
         </div>
-        
+
         <div className="flex items-center space-x-4">
-          <button className="p-2 text-gray-400 hover:text-gray-600">
-            🔔
-          </button>
-          <UserProfile 
-            name="Dr. Olivia Harper"
-            role="Internal Medicine"
-          />
+          <button className="p-2 text-gray-400 hover:text-gray-600">🔔</button>
+          <UserProfile name="Dr. Olivia Harper" role="Internal Medicine" />
         </div>
       </div>
     </div>

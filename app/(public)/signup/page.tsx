@@ -15,7 +15,7 @@ export default function SignUpPage() {
               Create Account
             </Heading>
           </div>
-          
+
           <form className="space-y-6">
             <Input
               type="text"
@@ -23,26 +23,26 @@ export default function SignUpPage() {
               label="Full Name"
               defaultValue="Fahmi Agung Maulana"
             />
-            
+
             <Input
               type="email"
               placeholder="fahmiagungmaulanaaa@gmail.com"
               label="Email"
               defaultValue="fahmiagungmaulanaaa@gmail.com"
             />
-            
+
             <Input
               type="password"
               placeholder="minimal 8 karakter"
               label="Password"
               defaultValue="minimal 8 karakter"
             />
-            
+
             <Button variant="primary" fullWidth size="lg">
               Sign Up
             </Button>
           </form>
-          
+
           <div className="mt-8">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
@@ -52,16 +52,19 @@ export default function SignUpPage() {
                 <span className="px-2 bg-white text-gray-500">Or</span>
               </div>
             </div>
-            
+
             <div className="mt-6">
               <SocialAuth action="signup" />
             </div>
           </div>
-          
+
           <div className="mt-8 text-center">
             <Text variant="small" className="text-gray-500">
               Already have an account?{" "}
-              <LinkAtom href="/login" className="text-[#6E62E5] hover:underline font-medium">
+              <LinkAtom
+                href="/login"
+                className="text-[#6E62E5] hover:underline font-medium"
+              >
                 Log In
               </LinkAtom>
             </Text>

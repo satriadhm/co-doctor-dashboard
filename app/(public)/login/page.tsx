@@ -15,7 +15,7 @@ export default function LoginPage() {
               Login
             </Heading>
           </div>
-          
+
           <form className="space-y-6">
             <Input
               type="email"
@@ -23,28 +23,28 @@ export default function LoginPage() {
               label="Email"
               defaultValue="fahmiagungmaulanaaa@gmail.com"
             />
-            
+
             <Input
               type="password"
               placeholder="minimal 8 karakter"
               label="Kata Sandi"
               defaultValue="minimal 8 karakter"
             />
-            
+
             <div className="text-right">
-              <LinkAtom 
-                href="#" 
+              <LinkAtom
+                href="#"
                 className="text-sm text-gray-400 hover:text-[#6E62E5] transition-colors"
               >
                 Forgot password?
               </LinkAtom>
             </div>
-            
+
             <Button variant="primary" fullWidth size="lg">
               Login
             </Button>
           </form>
-          
+
           <div className="mt-8">
             <div className="relative">
               <div className="absolute inset-0 flex items-center">
@@ -54,16 +54,19 @@ export default function LoginPage() {
                 <span className="px-2 bg-white text-gray-500">or</span>
               </div>
             </div>
-            
+
             <div className="mt-6">
               <SocialAuth action="signin" />
             </div>
           </div>
-          
+
           <div className="mt-8 text-center">
             <Text variant="small" className="text-gray-500">
               Don&apos;t have an account?{" "}
-              <LinkAtom href="/signup" className="text-[#6E62E5] hover:underline font-medium">
+              <LinkAtom
+                href="/signup"
+                className="text-[#6E62E5] hover:underline font-medium"
+              >
                 Sign Up
               </LinkAtom>
             </Text>

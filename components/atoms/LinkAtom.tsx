@@ -15,11 +15,11 @@ export default function LinkAtom({
   className = "",
 }: LinkAtomProps) {
   const baseClasses = "transition-colors cursor-pointer";
-  
+
   const variantClasses = {
     default: "text-[#6E62E5] hover:opacity-80",
     navigation: "text-[#AEAEAE] hover:text-gray-500 font-semibold",
-    active: "text-black font-semibold"
+    active: "text-black font-semibold",
   };
 
   return (

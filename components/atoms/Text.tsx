@@ -6,17 +6,19 @@ interface TextProps {
   className?: string;
 }
 
-export default function Text({ children, variant = "body", className = "" }: TextProps) {
+export default function Text({
+  children,
+  variant = "body",
+  className = "",
+}: TextProps) {
   const variantClasses = {
     large: "text-xl",
     body: "text-base",
     small: "text-sm",
-    caption: "text-xs"
+    caption: "text-xs",
   };
 
   return (
-    <p className={`${variantClasses[variant]} ${className}`}>
-      {children}
-    </p>
+    <p className={`${variantClasses[variant]} ${className}`}>{children}</p>
   );
 }

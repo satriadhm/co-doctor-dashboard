@@ -6,7 +6,10 @@ interface LogoProps {
 
 export default function Logo({ className = "" }: LogoProps) {
   return (
-    <Link href="/" className={`text-[#6E62E5] font-black text-4xl ${className}`}>
+    <Link
+      href="/"
+      className={`text-[#6E62E5] font-black text-4xl ${className}`}
+    >
       Co-Doctor
     </Link>
   );

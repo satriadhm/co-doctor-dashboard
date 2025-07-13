@@ -14,7 +14,7 @@ interface ChatMessagesProps {
 export default function ChatMessages({ messages }: ChatMessagesProps) {
   return (
     <div className="h-64 overflow-y-auto p-4 space-y-3">
-      {messages.map((message) => (
+      {messages.map(message => (
         <ChatMessage
           key={message.id}
           text={message.text}

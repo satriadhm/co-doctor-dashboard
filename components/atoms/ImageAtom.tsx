@@ -15,7 +15,7 @@ export default function ImageAtom({
   width,
   height,
   className = "",
-  priority = false
+  priority = false,
 }: ImageAtomProps) {
   return (
     <Image

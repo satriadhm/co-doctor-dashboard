@@ -10,7 +10,7 @@ export default function Home() {
     <PublicLayout>
       <div className="container mx-auto px-4">
         <HeroSection />
-        
+
         {/* Why Co-Doctor Section */}
         <section className="py-12">
           <div className="text-center mb-12">
@@ -18,7 +18,7 @@ export default function Home() {
               ⭐ Why Co-Doctor?
             </Heading>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-white rounded-lg shadow-md">
               <div className="mb-4">
@@ -35,7 +35,7 @@ export default function Home() {
                 physicians.
               </Text>
             </div>
-            
+
             <div className="text-center p-6 bg-white rounded-lg shadow-md">
               <div className="mb-4">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto">
@@ -50,7 +50,7 @@ export default function Home() {
                 error-checking so you can focus on your patients.
               </Text>
             </div>
-            
+
             <div className="text-center p-6 bg-white rounded-lg shadow-md">
               <div className="mb-4">
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         {/* CTA Section */}
         <section className="py-12 text-center">
           <div className="bg-white rounded-lg shadow-md p-8">

@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F6F8FA;
+  --background: #f6f8fa;
   --foreground: #171717;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
 }

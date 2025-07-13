@@ -1,4 +1,10 @@
-export default function ChartCard({ title, children }: { title: string; children: React.ReactNode }) {
+export default function ChartCard({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="bg-white rounded-lg p-6 shadow-sm border">
       <div className="flex items-center mb-4">
@@ -7,9 +13,7 @@ export default function ChartCard({ title, children }: { title: string; children
         </div>
         <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
       </div>
-      <div className="h-64 flex items-center justify-center">
-        {children}
-      </div>
+      <div className="h-64 flex items-center justify-center">{children}</div>
     </div>
   );
 }
