@@ -5,7 +5,7 @@ export default function HistoryTable() {
   ];
 
   return (
-    <div className="bg-white rounded-lg p-6 shadow-sm border">
+    <div className="bg-white rounded-lg p-6 shadow-sm">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-lg font-semibold text-gray-900">History</h3>
         <button className="text-[#6E62E5] text-sm hover:underline">
